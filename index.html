@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="timer_title">Countdown-Timer</div>
+      <div class="timer_container">
+        <div class="timer_label">
+          <div class="timer_label_hours">Hours</div>
+          <div class="timer_label_min">Minutes</div>
+          <div class="timer_label_sec">Seconds</div>
+        </div>
+        <div class="timer_input_div">
+          <input
+            type="number"
+            oninput="this.value=this.value.length>2?this.value.slice(0,2):this.value"
+            placeholder="00"
+            class="timer_input_hours"
+          />
+          <input
+            type="number"
+            oninput="this.value=this.value.length>2?this.value.slice(0,2):this.value"
+            placeholder="00"
+            placeholder="00"
+            class="timer_input_min"
+          />
+          <input
+            type="number"
+            oninput="this.value=this.value.length>2?this.value.slice(0,2):this.value"
+            placeholder="00"
+            placeholder="00"
+            class="timer_input_sec"
+          />
+        </div>
+        <div class="timer_btn">
+          <button class="timer_btn_start">Start</button>
+          <button class="timer_btn_stop">Stop</button>
+          <button class="timer_btn_reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

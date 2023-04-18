@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+.timer_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.timer_title {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.timer_label,
+.timer_input_div,
+.timer_btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.timer_label {
+  font-size: 1.2rem;
+}
+.timer_input_div input {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 110px;
+  font-size: 45px;
+}
+.timer_btn button {
+  border: none;
+  width: 50%;
+  height: 40px;
+  font-size: 1rem;
+  color: white;
+}
+.timer_btn_start {
+  background-color: green;
+}
+.timer_btn_stop {
+  background-color: orange;
+  display: none;
+}
+.timer_btn_reset {
+  background-color: red;
+}
